@@ -11,6 +11,8 @@ class HomeController extends Controller
     {
         $articles = Article::orderBy('created_at', 'desc')->get()->take(6);
 
+        dd($articles);
+
         return view('welcome');
     }
 }
