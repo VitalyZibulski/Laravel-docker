@@ -9,9 +9,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $articles = Article::orderBy('created_at', 'desc')->get()->take(6);
+//        $articles = Article::orderBy('created_at', 'desc')->get()->take(6);
 
-        dd($articles);
+//        dd($articles);
 
         return view('welcome');
     }

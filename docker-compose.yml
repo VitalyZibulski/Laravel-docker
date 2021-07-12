@@ -39,8 +39,8 @@ services:
             DB_HOST: db
             DB_PORT: 3306
             DB_DATABASE: laravel-app
-            DB_USERNAME: user
-            DB_PASSWORD: user
+            DB_USERNAME: root
+            DB_PASSWORD: root
     db:
         image: mysql:5.7
         ports:
@@ -48,8 +48,8 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_DATABASE: laravel-app
-            MYSQL_USER: user
-            MYSQL_PASSWORD: user
+            MYSQL_USER: root
+            MYSQL_PASSWORD: root
         networks:
             - laravel-app
 
